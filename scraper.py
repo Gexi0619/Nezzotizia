@@ -5,8 +5,8 @@ import asyncio
 from telegram import Bot
 
 # Telegram 配置
-BOT_TOKEN = "7799347711:AAEQDRavpSXKSNiaPMLBrVvSobnmwuMCL_Q"
-CHAT_ID = "-4740029830"  # Nezzotizia 群组 ID
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")  # Nezzotizia 群组 ID
 
 bot = Bot(token=BOT_TOKEN)
 file_path = "ricevimento.txt"
